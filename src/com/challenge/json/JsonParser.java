@@ -23,18 +23,18 @@ public class JsonParser {
      * Return the full path of a specified element in the JSON object.
      * 
      * @param jsonString The full JSON object notation string.
-     * @param element The element name to search for.
+     * @param elementToFind The element name to search for.
      * 
      * @return The full path of the element if it was found, an error message otherwise.
      */
-    public static String getFullPath(String jsonString, String element) {
+    public static String getFullPath(String jsonString, String elementToFind) {
         // Create a JsonObject from the full notation.
         JsonReader reader = Json.createReader(new StringReader(jsonString));
         JsonObject obj = reader.readObject();
         reader.close();
 
         // Recursively search/build the path.
-        String path = findElement(obj, null, element);
+        String path = findElement(obj, null, elementToFind);
         if (path == null)
             return "Element was not found.";
         else
