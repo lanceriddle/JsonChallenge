@@ -12,9 +12,10 @@ Thumbs.db
 #.settings/
 #assets/
 bin/
-#gen/
+gen/
 proguard/
 #.classpath
 #.project
 
 *.docx
+

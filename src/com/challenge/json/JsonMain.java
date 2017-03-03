@@ -5,9 +5,6 @@ import java.util.Scanner;
 /**
  * JsonMain contains main(), which initializes the JSON string,
  * and prompts the user for an element name to search for in the JSON object.
- * 
- * @author Lance Riddle (2/18/2017)
- *
  */
 public class JsonMain {
 

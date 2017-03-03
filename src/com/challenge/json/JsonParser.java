@@ -13,9 +13,6 @@ import javax.json.JsonValue;
 /**
  * The JsonParser handles the depth-first parsing of the JSON
  * object to find the proper element.
- * 
- * @author Lance Riddle (2/18/2017)
- *
  */
 public class JsonParser {
 
